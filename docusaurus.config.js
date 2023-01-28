@@ -59,11 +59,6 @@ const config = {
         },
         items: [
           {
-            href: "/",
-            label: "Full Documentation",
-            position: "left",
-          },
-          {
             href: "https://github.com/Gwhyyy",
             label: "GitHub",
             position: "right",
@@ -83,7 +78,7 @@ const config = {
             items: [
               {
                 label: "Full Documentation",
-                to: "/docs/intro",
+                to: "/",
               },
             ],
           },
