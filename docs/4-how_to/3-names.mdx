@@ -1,0 +1,31 @@
+# Change The App Name
+
+in order to changing the app name, we're going to use the [flutter_launcher_name](https://pub.dev/packages/flutter_launcher_name) package that simplifies the task of updating the app launcher name for you.
+
+1. From the app project directory, search for the `pubspec.yaml` file
+2. Open it, then add the following like this:
+
+```dart title=./application/pubspec.yaml {2,4-5}
+dev_dependencies:
+  flutter_launcher_name: "^0.0.1"
+
+flutter_launcher_name:
+  name: "yourNewAppLauncherName"
+```
+
+**Replace `yourNewAppLauncherName` with the your app name**
+
+:::caution Warning
+Be careful with spaces, this file is sensitive with spaces, an extra/less space will cause failure in next step
+:::
+
+3. Open the cmd (command line), then run this command:
+
+```
+flutter pub get
+flutter pub run flutter_launcher_name:main
+```
+
+4. Then wait so it get the package, and run it to change the app name
+
+5. That's it, now run or build your app and you should see the name changed
